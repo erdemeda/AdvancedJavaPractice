@@ -45,10 +45,27 @@ public class UpdateRange {
 
     public static void main(String[] args) {
 
-
+        uRange();
 
     }
 
+    private static void uRange() {
 
+        int array []= {1,6,12,15,22,18,30,16};
+
+        int sayi1 = 10;
+
+        int sayi2 = 20;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (sayi1<array[i] && array[i]<sayi2){
+                array[i]*=-1;
+
+            }
+            System.out.print(array[i]+" ");
+        }
+
+
+    }
 
 }

@@ -17,5 +17,35 @@ public class T04_SayiTahminKredili {
          */
 
 
+        int rastgeleSayi = new Random().nextInt(101);
+        System.out.println(rastgeleSayi);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lutfen 1 ile 100 arasinda bir tam sayi giriniz");
+        int sayi=scan.nextInt();
+
+
+        do {
+
+            if (sayi<rastgeleSayi){
+                System.out.println("Lutfen daha buyuk bir sayi giriniz");
+                sayi= scan.nextInt();
+            }else if (sayi>rastgeleSayi){
+                System.out.println("Lutfen daha kucuk bir sayi giriniz");
+                sayi= scan.nextInt();
+            }
+
+        } while (sayi!=rastgeleSayi);
+            System.out.println("Dogru tahmin, TEBRİKLER..:)");
+
+
+
+
+
+
+
+
+
+
     }
 }

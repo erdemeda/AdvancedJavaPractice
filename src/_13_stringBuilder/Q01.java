@@ -24,7 +24,7 @@ public class Q01 {
 
         if (tersMetin.equalsIgnoreCase(metin)) {
             System.out.println("girilen metin polindrome ifadedir : " + tersMetin);
-        } else System.out.println("girilen metin polindrome ifde degildir : " + tersMetin);
+        } else System.out.println("girilen metin polindrome ifade degildir : " + tersMetin);
     }
 
 }

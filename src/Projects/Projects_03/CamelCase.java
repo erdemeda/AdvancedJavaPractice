@@ -1,5 +1,10 @@
 package Projects.Projects_03;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+
 public class CamelCase {
 
     /*
@@ -33,10 +38,16 @@ public class CamelCase {
      */
     public static void main(String[] args) {
 
+       String cumle="I lIVe in uSa";
+        String arr[]=cumle.split(" ");//oncelikle cumleyi kelimelere ayirdim
+        System.out.println(Arrays.toString(arr));
 
 
+        for (int i = 0; i < arr.length ; i++) {
+            System.out.print(arr[i].substring(0,1).toUpperCase()+arr[i].substring(1).toLowerCase()+" ");//daha sonra her kelimenin bas harfini buyuk, diger harflerini kucuk yaptim
 
+        }
+
+        }
     }
 
-
-}

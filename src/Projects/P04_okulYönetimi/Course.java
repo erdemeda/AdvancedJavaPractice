@@ -2,7 +2,7 @@ package Projects.P04_okulYönetimi;
 
 public class Course {
 
-    projects.P04_okulYönetimi.Teacher teacher;
+    Projects.P04_okulYönetimi.Teacher teacher;
     String name;
     String prefix;
     int noteYazili;

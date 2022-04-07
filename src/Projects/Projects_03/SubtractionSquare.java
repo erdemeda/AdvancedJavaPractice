@@ -30,7 +30,7 @@ public class SubtractionSquare {
      */
 
     /*
-   substSquare: bu method parametre olara iki int alır ve  parametreleri getSumOfSquares methodu ile
+   substSquare: bu method parametre olarak iki int alır ve  parametreleri getSumOfSquares methodu ile
     return edilen degerlerin toplamını  return eder.
 
   Örnek:
