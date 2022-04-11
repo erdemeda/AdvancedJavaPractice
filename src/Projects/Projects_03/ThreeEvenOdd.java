@@ -33,6 +33,32 @@ public class ThreeEvenOdd {
     */
     public static void main(String[] args) {
 
+        int arr[]={2, 1, 3, 5};
+
+        boolean sonuc = tekCiftAdet(arr);
+
+        System.out.println(sonuc);
+
+    }
+
+    private static boolean tekCiftAdet(int[] arr) {
+        boolean sonuc=false;
+        int sayacCift=0;
+        int sayacTek=0;
+        for (int each:arr
+             ) {
+         if (each%2==0){
+             sayacCift++;
+         }else{
+             sayacTek++;
+         }
+        }
+
+     if (sayacCift==3||sayacTek==3){
+     sonuc=true;
+     }
+
+        return sonuc;
     }
 
 }

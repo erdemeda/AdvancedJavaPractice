@@ -45,27 +45,40 @@ public class UpdateRange {
 
     public static void main(String[] args) {
 
-        uRange();
+        int[] array = {1, 6, 12, 15, 22, 18, 30, 16};
+        int sayi1 = 10;
+        int sayi2 = 20;
+
+        int sonHal[] = uRange(array, sayi1, sayi2);
+
+        System.out.println(Arrays.toString(sonHal));
+
+
 
     }
 
-    private static void uRange() {
+    private static int[] uRange(int[] array, int sayi1, int sayi2) {
+        int[] sonHal = new int[array.length];//array'in uzunlugu ile ayni uzunlukta sonHal arrayi olusturduk
 
-        int array []= {1,6,12,15,22,18,30,16};
-
-        int sayi1 = 10;
-
-        int sayi2 = 20;
 
         for (int i = 0; i <array.length ; i++) {
-            if (sayi1<array[i] && array[i]<sayi2){
-                array[i]*=-1;
 
+            if (sayi1 < sayi2) {
+                if (sayi1 < array[i] && array[i] < sayi2) {//sayi1 ile sayi2 arasinda olmasi durumunda -1 degeri almasi saglandi
+                    sonHal[i] = -1;
+                } else {
+                    sonHal[i] = array[i];//eger sayi1 ile sayi2 arasinda degilse arraydeki deger direk sonHal'aktarilacak
+                }
+            } else if (sayi2 < sayi1) {
+                if (sayi2 < array[i] && array[i] < sayi1) {
+                    sonHal[i] = -1;
+                } else {
+                    sonHal[i] = array[i];
+
+                }
             }
-            System.out.print(array[i]+" ");
         }
-
-
+        return sonHal;
     }
 
 }
