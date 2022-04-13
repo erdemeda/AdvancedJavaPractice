@@ -1,4 +1,4 @@
-package ProjectsCevaplar.P04_okulYönetimi;
+package JavaProjects.P04_okulYönetimi.notHesap;
 
 public class Teacher {
 
