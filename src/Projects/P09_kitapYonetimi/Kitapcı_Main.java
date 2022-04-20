@@ -1,4 +1,4 @@
-package JavaProjects.P09_kitapYonetimi;
+package Projects.P09_kitapYonetimi;
 
 import java.util.Scanner;
 
@@ -30,52 +30,94 @@ public class Kitapcı_Main {
 		 */
 		// Kitapcı_KitapEkle kitap = new Kitapcı_KitapEkle();
 
-		menu();
-		boolean flag = true;
-		do {
-			Scanner scan = new Scanner(System.in);
-			System.out.println("Lütfen İşlem Seçiniz: çıkmak için '0' basın:");
-			int islem = Integer.parseInt(scan.nextLine()); // DUMMY YERİNE BUNU KULLANDIM NEXTINT TEN KAÇMAK İÇİN.
-			switch (islem) {
-			case 1:
-				Kitapcı_KitapEkle.kitapEkle();
-				break;
-			case 2:
-				Kitapcı_KitapEkle.kitapNoIleKitap();
-				break;
-			case 3:
-				Kitapcı_KitapEkle.bilgiIleKitap();
-				break;
-			case 4:
-				Kitapcı_KitapEkle.numaraIleKitapSil();
-				break;
-			case 5:
-				Kitapcı_KitapEkle.tumKitaplariListele();
-				break;
-			case 6:
-				System.out.println("Yine Bekleriz GÜLE GÜLE....");
-				flag = false;
-				break;
-			default:
-				System.out.println("Lütfen geçerli bir işlem numarası girin.");
-				break;
-			}
+		Scanner scan = new Scanner(System.in);
+		System.out.println("************ MENU ************");
+		System.out.println("1-kitap ekle\n2-numara ile kitap goruntule" +
+				"\n3-bilgi ile kitap goruntule\n4-numara ile kitap sil" +
+				"\n5-tum kitaplari listele\n6-cikis\n******************************");
+		System.out.println("Lutfen yukardaki bilgilere gore yapmak istediginiz islemin numarasini giriniz\nIslem yapmak istemiyorsaniz 0'a basiniz");
+        int islem=scan.nextInt();
 
-		} while (flag == true);
+
+
+
 
 	}
-
-	private static void menu() {
-
-		System.out.println("//////////////// KİTAPCI PRIGRAMI //////////////////");
-		System.out.println(
-				" 	1-kitap ekle\n" + 
-				"	2-numara ile kitap goruntule\n" + 
-				"	3-bilgi ile kitap goruntule\n"+ 
-				"	4-numara ile kitap sil\n" + 
-				"	5-tum kitaplari listele\n" + 
-				"	6-cikis ");
-
-	}
-
 }
+/*
+public class main extends Kitapci {
+
+    public main(String kitapAdi, String yazarAdi, int kitapFiyatı, int kitapNo) {
+        super(kitapAdi, yazarAdi, kitapFiyatı, kitapNo);
+    }
+
+
+
+    public static void main(String[] args) {
+
+
+
+        mainMenu();
+
+
+    }
+
+
+
+    public static void mainMenu() {
+
+        System.out.println("Lütfen yapmak istediğiniz işlemi belirtiniz.\n1.Kitap ekle\n2.No ile kitap görüntüle\n3.Bilgi ile kitap görüntüle\n4.No ile kitap sil\n5.Tüm kitapları listele\n6.Çıkış");
+    int tercih=scan.nextInt();
+
+    switch (tercih){
+
+        case 1: kitapEkle();
+            devamMenusu();break;
+
+        case 2:kitapGoruntule();
+            devamMenusu();break;
+        case 3:bilgiIleKitapGoruntule();
+            devamMenusu();break;
+        case 4:kitapSilme();break;
+        case 5:
+            System.out.println("Kitaplığımızdaki kitapların listesi: ");
+
+            if(kitaplarListesi.isEmpty()){
+                System.out.println("Kitapçıda hiçbir kitap bulunmamakta.");
+            }else {for (int i = 0; i <kitaplarListesi.size() ; i++) {System.out.println(kitaplarListesi.get(i).kitapAdi);}} devamMenusu();break;
+
+        case 6:
+            System.out.println("Hoşçakalın");
+
+        default:
+            System.out.println("Hatalı giriş yaptınız. Tekrar deneyin." );
+
+            mainMenu();
+
+
+            }
+
+
+            }
+
+
+
+    private static void devamMenusu() {
+
+        System.out.println("İşleminiz tamamlandı. Ana menuye donmek için 1'e, çıkmak için 2'e basınız.");
+
+        int tercih2= scan.nextInt();
+
+        switch (tercih2){
+
+            case 1:mainMenu(); break;
+            case 2:
+                System.out.println("Hoşçakalın."); break;
+            default:
+                System.out.println("hatalı giriş yaptınız. lütfen yeniden deneyiniz.");
+                devamMenusu(); break;
+
+        }
+    }
+    }
+ */

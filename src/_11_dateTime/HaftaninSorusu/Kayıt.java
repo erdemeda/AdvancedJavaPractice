@@ -1,5 +1,4 @@
 package _11_dateTime.HaftaninSorusu;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +29,11 @@ public class Kayıt {
             } else System.out.println("maalesef " + k.name + " ballar balının buldunuz kovanınız yagmalandı :)");
         }
     }
- public  void listele(List<Kullanıcı> kullanıcılar){
-     for (Kullanıcı k:kullanıcılar ) {//kayıtAl() methodyndan gelen kişler listini döngüye sokuyor
-         System.out.println("adı : "+k.name+" kayıt zamanı : "+k.kayıtZamanı);//kisile listteki her bir kullanıcının  ad ve kayıt zamanınn  yazdırıdı
-     }
+    public  void listele(List<Kullanıcı> kullanıcılar){
+        for (Kullanıcı k:kullanıcılar ) {//kayıtAl() methodyndan gelen kişler listini döngüye sokuyor
+            System.out.println("adı : "+k.name+" kayıt zamanı : "+k.kayıtZamanı);//kisile listteki her bir kullanıcının  ad ve kayıt zamanınn  yazdırıdı
+        }
 
- }
+    }
 }
+

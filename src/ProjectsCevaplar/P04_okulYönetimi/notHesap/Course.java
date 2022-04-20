@@ -1,4 +1,4 @@
-package JavaProjects.P04_okulYönetimi.notHesap;
+package ProjectsCevaplar.P04_okulYönetimi.notHesap;
 
 public class Course {
 

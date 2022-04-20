@@ -1,4 +1,4 @@
- package JavaProjects.Projects_01;
+ package ProjectsCevaplar.Projects_01;/*
 
 import org.junit.After;
 import org.junit.Assert;
@@ -397,3 +397,4 @@ import java.io.PrintStream;
 
 
  }
+ */

@@ -45,25 +45,25 @@ public class days {
 
         switch(day) {
             case 1:
-                System.out.println("monday");
+                System.out.println("pazartesi");
                 break;
             case 2:
-                System.out.println("tuesday");
+                System.out.println("sali");
                 break;
             case 3:
-                System.out.println("wednesday");
+                System.out.println("carsamba");
                 break;
             case 4:
-                System.out.println("thursday");
+                System.out.println("persembe");
                 break;
             case 5:
-                System.out.println("friday");
+                System.out.println("cuma");
                 break;
             case 6:
-                System.out.println("saturday");
+                System.out.println("cumartesi");
                 break;
             case 7:
-                System.out.println("sunday");
+                System.out.println("pazar");
                 break;
 
 

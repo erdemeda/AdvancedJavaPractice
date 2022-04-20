@@ -1,11 +1,11 @@
-package JavaProjects.P09_kitapYonetimi;
+package ProjectsCevaplar.P09_kitapYonetimi;
 
 public class EklenenKitaplar {
 	
 	public int kitapNo;
-	public String kitapAdı;
-	public String yazar;
-	public int kitapFiyatı;
+	public String kitapAdi;
+	public String yazarAdi;
+	public int kitapFiyati;
 	
 	
 	public EklenenKitaplar() {
@@ -15,9 +15,9 @@ public class EklenenKitaplar {
 	
 	public EklenenKitaplar (int kitapNo, String kitapAdı, String yazar, int kitapFiyatı) {
 		this.kitapNo=Kitapcı_KitapEkle.count;
-		this.kitapAdı=kitapAdı;
-		this.yazar=yazar;
-		this.kitapFiyatı=kitapFiyatı;
+		this.kitapAdi=kitapAdı;
+		this.yazarAdi=yazar;
+		this.kitapFiyati=kitapFiyatı;
 	}
 
 

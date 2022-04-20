@@ -1,4 +1,4 @@
-package JavaProjects.P10_aracKiralama;
+package ProjectsCevaplar.P10_aracKiralama;
 
 public class AracTalebi {
     public AracTalebi(){

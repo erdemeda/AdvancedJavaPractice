@@ -1,4 +1,4 @@
-package JavaProjects.P02_javaBankATM.JavaBankATM02;
+package ProjectsCevaplar.P02_javaBankATM.JavaBankATM02;
 
 public class Task {
     /*

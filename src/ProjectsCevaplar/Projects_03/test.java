@@ -1,13 +1,13 @@
-package JavaProjects.Projects_03;
+package ProjectsCevaplar.Projects_03;/*
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class test {
+public class test
 
 
 
-        @Test
+  {      @Test
         public void updateRange1(){
 
             UpdateRange u1 = new UpdateRange();
@@ -201,3 +201,6 @@ public class test {
     }
 
 
+
+
+ */

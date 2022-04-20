@@ -1,4 +1,4 @@
-package JavaProjects.P04_okulYönetimi.ogrcOgrtYonetimi;
+package ProjectsCevaplar.P04_okulYönetimi.ogrcOgrtYonetimi;
 
 public class Kisi {
 
@@ -46,7 +46,7 @@ public class Kisi {
 
     @Override
     public String toString() {
-        return "Kisi{" +
+        return "{" +
                 "adSoyad='" + adSoyad + '\'' +
                 ", kimlikNo='" + kimlikNo + '\'' +
                 ", yas=" + yas +

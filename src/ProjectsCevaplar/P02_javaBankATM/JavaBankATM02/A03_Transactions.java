@@ -1,8 +1,8 @@
-package JavaProjects.P02_javaBankATM.JavaBankATM02;
+package ProjectsCevaplar.P02_javaBankATM.JavaBankATM02;
 
 import java.util.*;
 
-import static JavaProjects.P02_javaBankATM.JavaBankATM02.A04_ChoiceMenu.*;
+import static ProjectsCevaplar.P02_javaBankATM.JavaBankATM02.A04_ChoiceMenu.*;
 
 
 public class A03_Transactions<pin1> {

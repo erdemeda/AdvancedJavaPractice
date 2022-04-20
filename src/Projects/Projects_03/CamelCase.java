@@ -38,38 +38,22 @@ public class CamelCase {
      */
     public static void main(String[] args) {
 
-       String cumle="I lIVe in uSa";
+
+       String cumle="I lIVe in uSa   ";
         String arr[]=cumle.split(" ");//oncelikle cumleyi kelimelere ayirdim
         System.out.println(Arrays.toString(arr));
 
+        String sonHali=camelCase(arr,cumle);
+        System.out.println(sonHali);
 
+        }
+
+    private static String camelCase(String[] arr, String cumle) {
+       String sonHali="";
         for (int i = 0; i < arr.length ; i++) {
-            System.out.print(arr[i].substring(0,1).toUpperCase()+arr[i].substring(1).toLowerCase()+" ");
-            //daha sonra her kelimenin bas harfini buyuk, diger harflerini kucuk yaptim
+            sonHali += arr[i].substring(0, 1).toUpperCase() + arr[i].substring(1).toLowerCase()+" ";
+        }//daha sonra her kelimenin bas harfini buyuk, diger harflerini kucuk yaptim
 
-        }
-
-        }
+        return sonHali;
     }
-/*
- public static void main(String[] args) {
-        String input = "I live in uSa";
-​
-        input = firstLetterToUppercase(input);
-        System.out.println(input);
-​
-​
-    }
-​
-    private static String firstLetterToUppercase(String input) {
-        StringBuilder output = new StringBuilder();
-        input = input.trim();
-        String[] newInput = input.split(" ");
-​
-        for (String s : newInput) {
-            output.append(s.substring(0, 1).toUpperCase()).append(s.substring(1).toLowerCase()).append(" ");
-​
-        }
-        return output.toString();
-    }
- */
+}

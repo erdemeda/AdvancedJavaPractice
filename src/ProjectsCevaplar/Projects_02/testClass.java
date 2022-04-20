@@ -1,4 +1,4 @@
-package JavaProjects.Projects_02;
+package ProjectsCevaplar.Projects_02;/*
 
 import org.junit.After;
 import org.junit.Assert;
@@ -368,3 +368,4 @@ public class testClass {
 
 
 }
+*/

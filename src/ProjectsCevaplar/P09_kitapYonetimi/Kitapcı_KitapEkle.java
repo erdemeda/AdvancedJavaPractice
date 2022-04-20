@@ -1,4 +1,4 @@
-package JavaProjects.P09_kitapYonetimi;
+package ProjectsCevaplar.P09_kitapYonetimi;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +57,8 @@ public class Kitapcı_KitapEkle {
 		for (EklenenKitaplar kitap : liste) {
 
 			if (kitap.kitapNo == kitapNu) {
-				System.out.println("Kitap No: " + kitap.kitapNo + ", Kitap Adı: " + kitap.kitapAdı + ", Yazar Adı: "
-						+ kitap.yazar + ", Fiyatı: " + kitap.kitapFiyatı);
+				System.out.println("Kitap No: " + kitap.kitapNo + ", Kitap Adı: " + kitap.kitapAdi + ", Yazar Adı: "
+						+ kitap.yazarAdi + ", Fiyatı: " + kitap.kitapFiyati);
 				kitapVarMi=true;
 			
 			}
@@ -113,15 +113,15 @@ public class Kitapcı_KitapEkle {
 			for (EklenenKitaplar kitap1 : liste) {
 
 				if (
-						kitap1.yazar.equalsIgnoreCase(yazar1) || 
-						kitap1.kitapAdı.equalsIgnoreCase(kitap)|| 
-						kitap1.kitapFiyatı == fiyat) {
+						kitap1.yazarAdi.equalsIgnoreCase(yazar1) ||
+						kitap1.kitapAdi.equalsIgnoreCase(kitap)||
+						kitap1.kitapFiyati == fiyat) {
 					
 					System.out.println(
 							"Kitap No: " + kitap1.kitapNo + 
-							", Kitap Adı: " + kitap1.kitapAdı
-							+ ", Yazar Adı: " + kitap1.yazar + 
-							", Fiyatı: " + kitap1.kitapFiyatı);
+							", Kitap Adı: " + kitap1.kitapAdi
+							+ ", Yazar Adı: " + kitap1.yazarAdi +
+							", Fiyatı: " + kitap1.kitapFiyati);
 					
 					gecerliMi=true;
 				} 
@@ -181,9 +181,9 @@ public class Kitapcı_KitapEkle {
 			
 			System.out.println(
 					"Kitap No: " + kitap1.kitapNo + 
-					", Kitap Adı: " + kitap1.kitapAdı + 
-					", Yazar Adı: "+ kitap1.yazar + 
-					", Fiyatı: " + kitap1.kitapFiyatı);
+					", Kitap Adı: " + kitap1.kitapAdi +
+					", Yazar Adı: "+ kitap1.yazarAdi +
+					", Fiyatı: " + kitap1.kitapFiyati);
 		}
 
 	}

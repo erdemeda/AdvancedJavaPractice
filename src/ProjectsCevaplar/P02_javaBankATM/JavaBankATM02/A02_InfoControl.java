@@ -1,9 +1,9 @@
-package JavaProjects.P02_javaBankATM.JavaBankATM02;
+package ProjectsCevaplar.P02_javaBankATM.JavaBankATM02;
 import java.util.Scanner;
 
-import static JavaProjects.P02_javaBankATM.JavaBankATM02.A03_Transactions.checkIbanAndPassword;
-import static JavaProjects.P02_javaBankATM.JavaBankATM02.A03_Transactions.checkPin;
-import static JavaProjects.P02_javaBankATM.JavaBankATM02.A04_ChoiceMenu.menuChoice;
+import static ProjectsCevaplar.P02_javaBankATM.JavaBankATM02.A03_Transactions.checkIbanAndPassword;
+import static ProjectsCevaplar.P02_javaBankATM.JavaBankATM02.A03_Transactions.checkPin;
+import static ProjectsCevaplar.P02_javaBankATM.JavaBankATM02.A04_ChoiceMenu.menuChoice;
 
 
 public class A02_InfoControl {
